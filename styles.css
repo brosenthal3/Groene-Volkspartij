@@ -1,0 +1,102 @@
+:root{
+    --main-color:rgb(9, 61, 139);
+}
+body{
+    background:#f1f1f1;
+    font-size:1.2rem;
+}
+
+li{
+    padding:1rem 0;
+}
+.whole-nav{
+    background:white;
+    display:flex;
+}
+nav{
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    font-size:1rem;
+}
+.big-nav{
+    font-size:1.3rem;
+    font-weight: bold;
+    color:var(--main-color);
+}
+
+#cover{
+    height:auto;
+    width:100%;
+    text-align:center;
+    background-image:url(https://images.pexels.com/photos/356036/pexels-photo-356036.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position-x: right;
+    position:relative;
+    margin-bottom:0;
+}
+#intro{
+    position:relative;
+    z-index:10;
+    color:rgb(0, 0, 0);
+    border:2px solid var(--main-color);
+    border-width:.35rem 0;
+    padding:1rem;
+}
+#intro h1{
+    font-size:6rem;
+    color:var(--main-color);
+    font-weight: bold;
+}
+#intro span{
+    font-size:1.4rem;
+    color:var(--main-color);
+    font-weight: bold;
+}
+#intro h2{
+    margin-top:.4rem;
+    font-size:3.7rem;
+}
+.standpunt{
+    padding:0rem 0;
+    
+}
+.standpunt h1{
+    font-size:2.1rem;
+    margin-bottom:3rem;
+}
+.standpunt-content{
+    width:100%;
+    padding:1rem 0;
+}
+.standpunt-content span{
+    color:var(--main-color);
+}
+.standpunt-content li{
+    list-style: georgian;
+}
+/*.standpunt-img{
+    width:50%;
+}
+.standpunt-img-right{
+    clip-path: polygon(0% 0, 40% 0%, 100% 100%, 0% 100%);
+}
+.standpunt-img-left{
+    clip-path: polygon(40% 0, 100% 0%, 100% 100%, 0% 100%);
+}
+.standpunt-img img{
+    height:40rem;
+    object-fit:cover;
+}*/
+
+.hoofdpunten{
+    display:flex;
+    justify-content: space-around;
+    padding:3rem 0;
+    color:white;
+    margin-bottom:3rem;
+}
+.hoofdpunten-wrapper{
+    background-color:var(--main-color);
+}

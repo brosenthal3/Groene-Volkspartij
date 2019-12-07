@@ -1,7 +1,124 @@
 :root{
-    --main-color:rgb(9, 61, 139);
+    --main-color:rgb(1, 90, 6);
 }
 body{
+    background:rgba(5,100,10,0.9);
+    margin:0;
+    color:white;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+input, button{
+    padding:1rem;
+    font-size:1rem;
+    margin:auto .5rem;
+    background:white;
+    border:0;
+    font-family:inherit;
+}
+
+.container{
+    max-width:70%;
+    margin:auto;
+    overflow:hidden;
+    padding:2rem 1rem;
+}
+.center{
+    text-align:center;
+    margin:auto;
+}
+
+.showcase{
+    position:relative;
+}
+.showcase{
+    background-image:url(background.jpg);
+    /*background:rgb(0, 110, 201);*/
+    height:auto;
+    width:100%;
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position:top;
+}
+.content{
+    z-index:1;
+    left:20%;
+    right:20%;
+    padding:4rem 0 6rem 0;
+    text-align:center;
+}
+.content .logo{
+    font-size:4.5rem;
+    font-weight: bolder;
+    color:rgba(5,100,10,0.9);
+}
+.content h1{
+    margin:auto;
+}
+.content .title{
+    font-size:3rem;
+    margin-top:.5rem;
+}
+.content .text{
+    line-height:1.7;
+    font-size:1.2rem;
+}
+.ideas{
+    margin-top:2rem;
+}
+.standpunten{
+    padding:2rem 0;
+}
+.standpunten span, .quotes span{
+    color:var(--main-color);
+}
+.grid-3{
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr;
+}
+.idea{
+    margin:0 3rem;
+}
+.grid-2{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+}
+.grid-3-1{
+    display:grid;
+    grid-template-columns:3fr 1fr;
+}
+
+.bg-light{
+    background:#f4f4f4;
+    color:#333;
+}
+.quotes h1{
+    font-size:4.5rem;
+}
+.quotes{
+    padding-bottom:2.5rem;
+}
+
+@media(max-width:650px){
+    .grid-3, .grid-2{
+        grid-template-columns:1fr;
+    }
+    .idea{
+        margin:auto;
+        padding-bottom:1.5rem;
+        width:100%;
+    }
+}
+@media(max-height:500px){
+    .content{
+        padding-top:5rem;
+    }
+    .grid-3, .grid-2{
+        grid-template-columns:1fr;
+    }
+}
+
+/*body{
     background:#f1f1f1;
     font-size:1.2rem;
 }
@@ -89,7 +206,7 @@ nav{
 .standpunt-img img{
     height:40rem;
     object-fit:cover;
-}*/
+}
 
 .hoofdpunten{
     display:flex;
@@ -109,8 +226,9 @@ nav{
     align-content: center;
     display:flex;
 }
-/*.hoofdpunten-wrapper img{
+.hoofdpunten-wrapper img{
     height:20rem;
     width:100%;
     object-fit: cover;
 }*/
+

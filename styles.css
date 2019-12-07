@@ -1,11 +1,19 @@
 :root{
     --main-color:rgb(1, 90, 6);
+    --accent-color:rgb(233, 212, 27);
+    
+}
+*{
+    scroll-behavior: smooth;
 }
 body{
     background:rgba(5,100,10,0.9);
     margin:0;
     color:white;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+section, nav, header{
+    border-bottom:.21rem solid var(--accent-color);
 }
 
 input, button{
@@ -15,6 +23,9 @@ input, button{
     background:white;
     border:0;
     font-family:inherit;
+}
+button{
+    background:var(--accent-color);
 }
 
 .container{
@@ -98,15 +109,49 @@ input, button{
 .quotes{
     padding-bottom:2.5rem;
 }
-
-@media(max-width:650px){
+.nav-items{
+    display:flex;
+    justify-content:center;
+}
+.nav-items a{
+    color:inherit;
+    padding:.8rem 1.5rem;
+    text-decoration: none;
+    transition-duration:200ms;
+    transition-property: color;
+    text-transform: uppercase;
+    font-size:1rem;
+}
+.nav-items a:hover{
+    color:var(--accent-color);
+}
+nav .container{
+    padding:0rem 0;
+}
+@media(max-width:770px){
     .grid-3, .grid-2{
         grid-template-columns:1fr;
+    }
+    .fa-bullhorn{
+        display:none;
     }
     .idea{
         margin:auto;
         padding-bottom:1.5rem;
         width:100%;
+    }
+    .quotes h1{
+        font-size:2.5rem;
+    }
+    input, button{
+        margin:.12rem .12rem;
+    }
+    .container{
+        max-width:87%;
+    }
+    .nav-items a{
+        text-transform: none;
+        padding:.8rem .9rem;
     }
 }
 @media(max-height:500px){
